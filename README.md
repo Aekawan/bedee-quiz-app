@@ -155,14 +155,14 @@ react-native-quiz-app/
 
 ## Screenshots
 
-![alt text](https://raw.githubusercontent.com/Aekawan/bedee-quiz-app/main/screenshot/1.png?raw=true)
+<img src="https://raw.githubusercontent.com/Aekawan/bedee-quiz-app/main/screenshot/1.png?raw=true" alt="Quiz Screen" width="300"/>
 
-![alt text](https://raw.githubusercontent.com/Aekawan/bedee-quiz-app/main/screenshot/2.png?raw=true)
+<img src="https://raw.githubusercontent.com/Aekawan/bedee-quiz-app/main/screenshot/2.png?raw=true" alt="Quiz Screen" width="300"/>
 
-![alt text](https://raw.githubusercontent.com/Aekawan/bedee-quiz-app/main/screenshot/3.png?raw=true)
+<img src="https://raw.githubusercontent.com/Aekawan/bedee-quiz-app/main/screenshot/3.png?raw=true" alt="Quiz Screen" width="300"/>
 
-![alt text](https://raw.githubusercontent.com/Aekawan/bedee-quiz-app/main/screenshot/4.png?raw=true)
+<img src="https://raw.githubusercontent.com/Aekawan/bedee-quiz-app/main/screenshot/4.png?raw=true" alt="Quiz Screen" width="300"/>
 
-![alt text](https://raw.githubusercontent.com/Aekawan/bedee-quiz-app/main/screenshot/5.png?raw=true)
+<img src="https://raw.githubusercontent.com/Aekawan/bedee-quiz-app/main/screenshot/5.png?raw=true" alt="Quiz Screen" width="300"/>
 
-![alt text](https://raw.githubusercontent.com/Aekawan/bedee-quiz-app/main/screenshot/6.png?raw=true)
+<img src="https://raw.githubusercontent.com/Aekawan/bedee-quiz-app/main/screenshot/6.png?raw=true" alt="Quiz Screen" width="300"/>

@@ -1,79 +1,168 @@
-This is a new [**React Native**](https://reactnative.dev) project, bootstrapped using [`@react-native-community/cli`](https://github.com/react-native-community/cli).
 
-# Getting Started
+# React Native Quiz App
 
->**Note**: Make sure you have completed the [React Native - Environment Setup](https://reactnative.dev/docs/environment-setup) instructions till "Creating a new application" step, before proceeding.
+This project is a React Native application for a quiz. It shuffles questions and answers, allows users to answer questions, and displays a leaderboard with the user's score.
 
-## Step 1: Start the Metro Server
+## Table of Contents
 
-First, you will need to start **Metro**, the JavaScript _bundler_ that ships _with_ React Native.
+- [Installation](#installation)
+- [Running the App](#running-the-app)
+- [Project Structure](#project-structure)
+- [Usage](#usage)
+- [Screenshots](#screenshots)
+- [Contributing](#contributing)
+- [License](#license)
 
-To start Metro, run the following command from the _root_ of your React Native project:
+## Installation
+
+### Prerequisites
+
+Ensure you have the following installed on your system:
+
+- [Node.js](https://nodejs.org/) (version 16 or higher)
+- [npm](https://www.npmjs.com/) (comes with Node.js) or [Yarn](https://yarnpkg.com/)
+- [React Native CLI](https://reactnative.dev/docs/environment-setup) (only for React Native CLI users, not required for Expo users)
+- [Xcode](https://developer.apple.com/xcode/) (for iOS development)
+- [Android Studio](https://developer.android.com/studio) (for Android development)
+
+### Step-by-Step Installation
+
+1. Clone the repository:
+
+   ```bash
+   git clone <https://github.com/Aekawan/bedee-quiz-app.git>
+   cd bedee-quiz-app
+   ```
+
+2. Install dependencies:
+
+   ```bash
+   npm install
+   ```
+
+   or if you prefer yarn
+
+   ```bash
+   yarn install
+   ```
+
+3. Install react-native-vector-icons:
+
+   ```bash
+   npm install react-native-vector-icons
+   ```
+
+4. Link the react-native-vector-icons (only if you're using React Native version below 0.60):
+
+  ```bash
+   react-native link react-native-vector-icons
+  ```
+
+5. For iOS users, install CocoaPods dependencies:
+
+  ```bash
+   cd ios
+   pod install
+   cd ..
+  ```
+
+## Running the App
+
+### Running on iOS
+
+1. Start the Metro Bundler:
+
+  ```bash
+   npm start
+
+# or
+
+   yarn start
+  ```
+
+2. In another terminal, run:
+
+  ```bash
+   npx react-native run-ios
+  ```
+
+### Running on Android
+
+1. Make sure you have an Android emulator running or a physical device connected.
+
+2. Start the Metro Bundler:
+
+  ```bash
+   npm start
+
+# or
+
+   yarn start
+  ```
+
+3. In another terminal, run:
+
+  ```bash
+   npx react-native run-android
+  ```
+
+## Project Structure
 
 ```bash
-# using npm
-npm start
-
-# OR using Yarn
-yarn start
+react-native-quiz-app/
+├── android/
+├── ios/
+├── src/
+│   ├── components/
+│   │   ├── AnswerButton.tsx
+│   │   ├── Header.tsx
+│   │   ├── LeaderBoardButton.tsx
+│   │   ├── Question.tsx
+│   │   ├── QuizContainer.tsx
+│   │   ├── SubmitButton.tsx
+│   │   ├── QuizHeader.tsx
+│   ├── context/
+│   │   └── QuizContext.tsx
+│   ├── data/
+│   │   ├── leaderboard.ts
+│   │   └── questions.ts
+│   ├── screens/
+│   │   ├── QuizScreen.tsx
+│   │   └── LeaderboardScreen.tsx
+│   ├── types/
+│   │   └── navigation.ts
+│   ├── utils/
+│   │   └── index.ts
+│   └── theme.ts
+├── .gitignore
+├── App.tsx
+├── package.json
+├── tsconfig.json
+└── README.md
 ```
 
-## Step 2: Start your Application
+## Usage
 
-Let Metro Bundler run in its _own_ terminal. Open a _new_ terminal from the _root_ of your React Native project. Run the following command to start your _Android_ or _iOS_ app:
+1. **Quiz Screen**:
+   - Displays 20 shuffled questions.
+   - Each question has multiple shuffled answers.
+   - Users can select an answer for each question.
+   - Answers are immediately checked for correctness and indicated with icons.
 
-### For Android
+2. **Leaderboard Screen**:
+   - Displays the user's score after completing the quiz.
+   - Users can navigate back to the quiz to retry.
 
-```bash
-# using npm
-npm run android
+## Screenshots
 
-# OR using Yarn
-yarn android
-```
+![alt text](https://raw.githubusercontent.com/Aekawan/bedee-quiz-app/main/screenshot/1.png?raw=true)
 
-### For iOS
+![alt text](https://raw.githubusercontent.com/Aekawan/bedee-quiz-app/main/screenshot/2.png?raw=true)
 
-```bash
-# using npm
-npm run ios
+![alt text](https://raw.githubusercontent.com/Aekawan/bedee-quiz-app/main/screenshot/3.png?raw=true)
 
-# OR using Yarn
-yarn ios
-```
+![alt text](https://raw.githubusercontent.com/Aekawan/bedee-quiz-app/main/screenshot/4.png?raw=true)
 
-If everything is set up _correctly_, you should see your new app running in your _Android Emulator_ or _iOS Simulator_ shortly provided you have set up your emulator/simulator correctly.
+![alt text](https://raw.githubusercontent.com/Aekawan/bedee-quiz-app/main/screenshot/5.png?raw=true)
 
-This is one way to run your app — you can also run it directly from within Android Studio and Xcode respectively.
-
-## Step 3: Modifying your App
-
-Now that you have successfully run the app, let's modify it.
-
-1. Open `App.tsx` in your text editor of choice and edit some lines.
-2. For **Android**: Press the <kbd>R</kbd> key twice or select **"Reload"** from the **Developer Menu** (<kbd>Ctrl</kbd> + <kbd>M</kbd> (on Window and Linux) or <kbd>Cmd ⌘</kbd> + <kbd>M</kbd> (on macOS)) to see your changes!
-
-   For **iOS**: Hit <kbd>Cmd ⌘</kbd> + <kbd>R</kbd> in your iOS Simulator to reload the app and see your changes!
-
-## Congratulations! :tada:
-
-You've successfully run and modified your React Native App. :partying_face:
-
-### Now what?
-
-- If you want to add this new React Native code to an existing application, check out the [Integration guide](https://reactnative.dev/docs/integration-with-existing-apps).
-- If you're curious to learn more about React Native, check out the [Introduction to React Native](https://reactnative.dev/docs/getting-started).
-
-# Troubleshooting
-
-If you can't get this to work, see the [Troubleshooting](https://reactnative.dev/docs/troubleshooting) page.
-
-# Learn More
-
-To learn more about React Native, take a look at the following resources:
-
-- [React Native Website](https://reactnative.dev) - learn more about React Native.
-- [Getting Started](https://reactnative.dev/docs/environment-setup) - an **overview** of React Native and how setup your environment.
-- [Learn the Basics](https://reactnative.dev/docs/getting-started) - a **guided tour** of the React Native **basics**.
-- [Blog](https://reactnative.dev/blog) - read the latest official React Native **Blog** posts.
-- [`@facebook/react-native`](https://github.com/facebook/react-native) - the Open Source; GitHub **repository** for React Native.
+![alt text](https://raw.githubusercontent.com/Aekawan/bedee-quiz-app/main/screenshot/6.png?raw=true)

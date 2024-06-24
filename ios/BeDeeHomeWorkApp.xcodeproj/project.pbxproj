@@ -11,7 +11,10 @@
 		13B07FBC1A68108700A75B9A /* AppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.mm */; };
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
+		2295EE38EA8CA3877F91B6DA /* libPods-BeDeeHomeWorkApp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B0D147DEAF5C71BB274B1504 /* libPods-BeDeeHomeWorkApp.a */; };
+		67CA318F2C28B53000FA648D /* Fonts in Resources */ = {isa = PBXBuildFile; fileRef = 67CA318E2C28B53000FA648D /* Fonts */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
+		895D84B2E5B6C8585FC21B88 /* libPods-BeDeeHomeWorkApp-BeDeeHomeWorkAppTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7EBDEB0DD09E5C1205C85DED /* libPods-BeDeeHomeWorkApp-BeDeeHomeWorkAppTests.a */; };
 		F6A19DFCFD12E77DD126273F /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = 63E485E8CC8397626D28DD71 /* PrivacyInfo.xcprivacy */; };
 /* End PBXBuildFile section */
 
@@ -36,8 +39,15 @@
 		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = BeDeeHomeWorkApp/Info.plist; sourceTree = "<group>"; };
 		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = BeDeeHomeWorkApp/main.m; sourceTree = "<group>"; };
 		13B07FB81A68108700A75B9A /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = PrivacyInfo.xcprivacy; path = BeDeeHomeWorkApp/PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
+		16F6C7B4C7C4ADBB3630BF4E /* Pods-BeDeeHomeWorkApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BeDeeHomeWorkApp.release.xcconfig"; path = "Target Support Files/Pods-BeDeeHomeWorkApp/Pods-BeDeeHomeWorkApp.release.xcconfig"; sourceTree = "<group>"; };
+		210A04C195D796EB2E017517 /* Pods-BeDeeHomeWorkApp-BeDeeHomeWorkAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BeDeeHomeWorkApp-BeDeeHomeWorkAppTests.release.xcconfig"; path = "Target Support Files/Pods-BeDeeHomeWorkApp-BeDeeHomeWorkAppTests/Pods-BeDeeHomeWorkApp-BeDeeHomeWorkAppTests.release.xcconfig"; sourceTree = "<group>"; };
+		348E78FF247AADC5A73A3DB6 /* Pods-BeDeeHomeWorkApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BeDeeHomeWorkApp.debug.xcconfig"; path = "Target Support Files/Pods-BeDeeHomeWorkApp/Pods-BeDeeHomeWorkApp.debug.xcconfig"; sourceTree = "<group>"; };
 		63E485E8CC8397626D28DD71 /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xml; name = PrivacyInfo.xcprivacy; path = BeDeeHomeWorkApp/PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
+		67CA318E2C28B53000FA648D /* Fonts */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Fonts; path = "../node_modules/react-native-vector-icons/Fonts"; sourceTree = "<group>"; };
+		69CC0BF9FC6586709FE047AB /* Pods-BeDeeHomeWorkApp-BeDeeHomeWorkAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BeDeeHomeWorkApp-BeDeeHomeWorkAppTests.debug.xcconfig"; path = "Target Support Files/Pods-BeDeeHomeWorkApp-BeDeeHomeWorkAppTests/Pods-BeDeeHomeWorkApp-BeDeeHomeWorkAppTests.debug.xcconfig"; sourceTree = "<group>"; };
+		7EBDEB0DD09E5C1205C85DED /* libPods-BeDeeHomeWorkApp-BeDeeHomeWorkAppTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-BeDeeHomeWorkApp-BeDeeHomeWorkAppTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = BeDeeHomeWorkApp/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		B0D147DEAF5C71BB274B1504 /* libPods-BeDeeHomeWorkApp.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-BeDeeHomeWorkApp.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
@@ -46,6 +56,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				895D84B2E5B6C8585FC21B88 /* libPods-BeDeeHomeWorkApp-BeDeeHomeWorkAppTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -53,6 +64,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2295EE38EA8CA3877F91B6DA /* libPods-BeDeeHomeWorkApp.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -79,6 +91,7 @@
 		13B07FAE1A68108700A75B9A /* BeDeeHomeWorkApp */ = {
 			isa = PBXGroup;
 			children = (
+				67CA318E2C28B53000FA648D /* Fonts */,
 				13B07FAF1A68108700A75B9A /* AppDelegate.h */,
 				13B07FB01A68108700A75B9A /* AppDelegate.mm */,
 				13B07FB51A68108700A75B9A /* Images.xcassets */,
@@ -95,6 +108,8 @@
 			isa = PBXGroup;
 			children = (
 				ED297162215061F000B7C4FE /* JavaScriptCore.framework */,
+				B0D147DEAF5C71BB274B1504 /* libPods-BeDeeHomeWorkApp.a */,
+				7EBDEB0DD09E5C1205C85DED /* libPods-BeDeeHomeWorkApp-BeDeeHomeWorkAppTests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -133,6 +148,10 @@
 		BBD78D7AC51CEA395F1C20DB /* Pods */ = {
 			isa = PBXGroup;
 			children = (
+				348E78FF247AADC5A73A3DB6 /* Pods-BeDeeHomeWorkApp.debug.xcconfig */,
+				16F6C7B4C7C4ADBB3630BF4E /* Pods-BeDeeHomeWorkApp.release.xcconfig */,
+				69CC0BF9FC6586709FE047AB /* Pods-BeDeeHomeWorkApp-BeDeeHomeWorkAppTests.debug.xcconfig */,
+				210A04C195D796EB2E017517 /* Pods-BeDeeHomeWorkApp-BeDeeHomeWorkAppTests.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -144,9 +163,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "BeDeeHomeWorkAppTests" */;
 			buildPhases = (
+				834845B6479EF61F3821624B /* [CP] Check Pods Manifest.lock */,
 				00E356EA1AD99517003FC87E /* Sources */,
 				00E356EB1AD99517003FC87E /* Frameworks */,
 				00E356EC1AD99517003FC87E /* Resources */,
+				354F6F71AB9E6BDFCD87915B /* [CP] Embed Pods Frameworks */,
+				24F0E314AA81E05A10D52018 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -162,10 +184,13 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "BeDeeHomeWorkApp" */;
 			buildPhases = (
+				1C1BDAA371C9ADDA51C93C8C /* [CP] Check Pods Manifest.lock */,
 				13B07F871A680F5B00A75B9A /* Sources */,
 				13B07F8C1A680F5B00A75B9A /* Frameworks */,
 				13B07F8E1A680F5B00A75B9A /* Resources */,
 				00DD1BFF1BD5951E006B06BC /* Bundle React Native code and images */,
+				202D5E38378B4458010829A8 /* [CP] Embed Pods Frameworks */,
+				C8E6C7CABD9487E680A85A79 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -227,6 +252,7 @@
 				81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
 				F6A19DFCFD12E77DD126273F /* PrivacyInfo.xcprivacy in Resources */,
+				67CA318F2C28B53000FA648D /* Fonts in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -248,6 +274,118 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "set -e\n\nWITH_ENVIRONMENT=\"$REACT_NATIVE_PATH/scripts/xcode/with-environment.sh\"\n\nREACT_NATIVE_XCODE=\"$REACT_NATIVE_PATH/scripts/react-native-xcode.sh\"\n\n/bin/sh -c \"$WITH_ENVIRONMENT $REACT_NATIVE_XCODE\"\n";
+		};
+		1C1BDAA371C9ADDA51C93C8C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BeDeeHomeWorkApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		202D5E38378B4458010829A8 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BeDeeHomeWorkApp/Pods-BeDeeHomeWorkApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BeDeeHomeWorkApp/Pods-BeDeeHomeWorkApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-BeDeeHomeWorkApp/Pods-BeDeeHomeWorkApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		24F0E314AA81E05A10D52018 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BeDeeHomeWorkApp-BeDeeHomeWorkAppTests/Pods-BeDeeHomeWorkApp-BeDeeHomeWorkAppTests-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BeDeeHomeWorkApp-BeDeeHomeWorkAppTests/Pods-BeDeeHomeWorkApp-BeDeeHomeWorkAppTests-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-BeDeeHomeWorkApp-BeDeeHomeWorkAppTests/Pods-BeDeeHomeWorkApp-BeDeeHomeWorkAppTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		354F6F71AB9E6BDFCD87915B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BeDeeHomeWorkApp-BeDeeHomeWorkAppTests/Pods-BeDeeHomeWorkApp-BeDeeHomeWorkAppTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BeDeeHomeWorkApp-BeDeeHomeWorkAppTests/Pods-BeDeeHomeWorkApp-BeDeeHomeWorkAppTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-BeDeeHomeWorkApp-BeDeeHomeWorkAppTests/Pods-BeDeeHomeWorkApp-BeDeeHomeWorkAppTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		834845B6479EF61F3821624B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BeDeeHomeWorkApp-BeDeeHomeWorkAppTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C8E6C7CABD9487E680A85A79 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BeDeeHomeWorkApp/Pods-BeDeeHomeWorkApp-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BeDeeHomeWorkApp/Pods-BeDeeHomeWorkApp-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-BeDeeHomeWorkApp/Pods-BeDeeHomeWorkApp-resources.sh\"\n";
+			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -282,6 +420,7 @@
 /* Begin XCBuildConfiguration section */
 		00E356F61AD99517003FC87E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 69CC0BF9FC6586709FE047AB /* Pods-BeDeeHomeWorkApp-BeDeeHomeWorkAppTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				GCC_PREPROCESSOR_DEFINITIONS = (
@@ -308,6 +447,7 @@
 		};
 		00E356F71AD99517003FC87E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 210A04C195D796EB2E017517 /* Pods-BeDeeHomeWorkApp-BeDeeHomeWorkAppTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				COPY_PHASE_STRIP = NO;
@@ -331,6 +471,7 @@
 		};
 		13B07F941A680F5B00A75B9A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 348E78FF247AADC5A73A3DB6 /* Pods-BeDeeHomeWorkApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
@@ -357,6 +498,7 @@
 		};
 		13B07F951A680F5B00A75B9A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 16F6C7B4C7C4ADBB3630BF4E /* Pods-BeDeeHomeWorkApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
@@ -452,10 +594,7 @@
 					"-DFOLLY_CFG_NO_COROUTINES=1",
 					"-DFOLLY_HAVE_CLOCK_GETTIME=1",
 				);
-				OTHER_LDFLAGS = (
-					"$(inherited)",
-					" ",
-				);
+				OTHER_LDFLAGS = "$(inherited)  ";
 				REACT_NATIVE_PATH = "${PODS_ROOT}/../../node_modules/react-native";
 				SDKROOT = iphoneos;
 				USE_HERMES = true;
@@ -527,10 +666,7 @@
 					"-DFOLLY_CFG_NO_COROUTINES=1",
 					"-DFOLLY_HAVE_CLOCK_GETTIME=1",
 				);
-				OTHER_LDFLAGS = (
-					"$(inherited)",
-					" ",
-				);
+				OTHER_LDFLAGS = "$(inherited)  ";
 				REACT_NATIVE_PATH = "${PODS_ROOT}/../../node_modules/react-native";
 				SDKROOT = iphoneos;
 				USE_HERMES = true;

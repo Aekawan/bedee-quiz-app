@@ -24,6 +24,12 @@ const ButtonContainer = styled.View`
   margin: 16px;
 `;
 
+const PoweredBy = styled.Text`
+  font-size: 12px;
+  text-align: center;
+  margin-top: 20px;
+`;
+
 const QuizScreen: React.FC = () => {
   const navigation = useNavigation<NavigationProp>();
   const {setTotalQuestions, setAnsweredQuestions, setScore, score} = useQuiz();
@@ -127,6 +133,7 @@ const QuizScreen: React.FC = () => {
           <ButtonContainer>
             <SubmitButton onPress={handleSubmit} />
             <LeaderBoardButton onPress={handleGoToLeaderBoard} />
+            <PoweredBy>Powered by Aekkawan Klapsan</PoweredBy>
           </ButtonContainer>
         }
       />

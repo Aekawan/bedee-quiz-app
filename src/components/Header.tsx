@@ -1,10 +1,11 @@
 import React from 'react';
-import {View, Text, StyleSheet, TouchableOpacity} from 'react-native';
+import {View, TouchableOpacity} from 'react-native';
 import {useSafeAreaInsets} from 'react-native-safe-area-context';
 import Icon from 'react-native-vector-icons/Entypo';
 import IconAnt from 'react-native-vector-icons/AntDesign';
 import {useQuiz} from '../context/QuizContext';
 import {useNavigation} from '@react-navigation/native';
+import styled from 'styled-components/native';
 
 interface HeaderProps {
   title: string;
@@ -17,10 +18,10 @@ const Header: React.FC<HeaderProps> = ({title, showBackButton = false}) => {
   const navigation = useNavigation();
 
   return (
-    <View style={[styles.headerContainer, {paddingTop: insets.top}]}>
-      <View style={styles.headerContent}>
+    <HeaderContainer paddingTop={insets.top}>
+      <HeaderContent>
         {showBackButton ? (
-          <View style={styles.headerWithBackContainer}>
+          <HeaderWithBackContainer>
             <TouchableOpacity
               onPress={() => {
                 resetQuiz();
@@ -28,105 +29,111 @@ const Header: React.FC<HeaderProps> = ({title, showBackButton = false}) => {
               }}>
               <IconAnt name="arrowleft" size={24} color="#05138A" />
             </TouchableOpacity>
-            <Text style={styles.headerTitle}>{title}</Text>
-          </View>
+            <HeaderTitle>{title}</HeaderTitle>
+          </HeaderWithBackContainer>
         ) : (
-          <View style={styles.logoContainer}>
-            <View style={styles.logo}>
+          <LogoContainer>
+            <Logo>
               <Icon name="500px" size={40} color="#05138A" />
-              <Text style={styles.headerTitle}>{title}</Text>
-            </View>
+              <HeaderTitle>{title}</HeaderTitle>
+            </Logo>
             {totalQuestions > 0 && (
-              <View style={styles.rowContainer}>
-                <Text style={styles.progressTextBold}>{answeredQuestions}</Text>
-                <Text style={styles.progressText}>/ {totalQuestions}</Text>
-              </View>
+              <RowContainer>
+                <ProgressTextBold>{answeredQuestions}</ProgressTextBold>
+                <ProgressText>/ {totalQuestions}</ProgressText>
+              </RowContainer>
             )}
-          </View>
+          </LogoContainer>
         )}
-      </View>
-      <View style={styles.headerContent}>
+      </HeaderContent>
+      <HeaderContent>
         {!showBackButton && (
           <>
-            <Text style={styles.welcomeText}>Welcome</Text>
-            <View style={styles.rowContainer}>
-              <Text style={styles.progressText}>Your Score</Text>
-              <Text style={styles.scoreText}>{score}</Text>
-            </View>
+            <WelcomeText>Welcome</WelcomeText>
+            <RowContainer>
+              <ProgressText>Your Score</ProgressText>
+              <ScoreText>{score}</ScoreText>
+            </RowContainer>
           </>
         )}
-      </View>
-    </View>
+      </HeaderContent>
+    </HeaderContainer>
   );
 };
 
-const styles = StyleSheet.create({
-  headerContainer: {
-    backgroundColor: '#ffff',
-    paddingBottom: 10,
-    alignItems: 'center',
-    justifyContent: 'center',
-    shadowColor: '#000',
-    shadowOffset: {width: 0, height: 2},
-    shadowOpacity: 0.2,
-    shadowRadius: 4,
-    elevation: 4,
-  },
-  headerTitle: {
-    color: '#091288',
-    fontWeight: 'bold',
-    fontSize: 32,
-    marginLeft: 10,
-  },
-  logoContainer: {
-    flexDirection: 'row',
-    justifyContent: 'space-between',
-    alignItems: 'center',
-    width: '100%',
-  },
-  logo: {
-    flexDirection: 'row',
-    alignItems: 'center',
-  },
-  progressText: {
-    color: '#091288',
-    fontSize: 14,
-    marginTop: 5,
-  },
-  progressTextBold: {
-    color: '#091288',
-    fontSize: 14,
-    marginTop: 5,
-    fontWeight: 'bold',
-    marginRight: 5,
-  },
-  scoreText: {
-    color: '#091288',
-    fontSize: 18,
-    fontWeight: 'bold',
-    marginLeft: 5,
-    marginTop: 2,
-  },
-  headerContent: {
-    flexDirection: 'row',
-    justifyContent: 'space-between',
-    alignItems: 'center',
-    width: '90%',
-  },
-  rowContainer: {
-    flexDirection: 'row',
-    alignItems: 'center',
-  },
-  welcomeText: {
-    color: '#091288',
-    marginTop: 10,
-  },
-  headerWithBackContainer: {
-    display: 'flex',
-    flexDirection: 'row',
-    gap: 6,
-    alignItems: 'center',
-  },
-});
+const HeaderContainer = styled(View)<{paddingTop: number}>`
+  background-color: #fff;
+  padding-bottom: 10px;
+  align-items: center;
+  justify-content: center;
+  padding-top: ${({paddingTop}) => paddingTop}px;
+  shadow-color: #000;
+  shadow-offset: 0px 2px;
+  shadow-opacity: 0.2;
+  shadow-radius: 4px;
+  elevation: 4;
+`;
+
+const HeaderContent = styled(View)`
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+`;
+
+const HeaderTitle = styled.Text`
+  color: ${({theme}) => theme.colors.primary};
+  font-weight: bold;
+  font-size: 32px;
+  margin-left: 10px;
+`;
+
+const LogoContainer = styled(View)`
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+`;
+
+const Logo = styled(View)`
+  flex-direction: row;
+  align-items: center;
+`;
+
+const ProgressText = styled.Text`
+  color: ${({theme}) => theme.colors.primary};
+  font-size: 14px;
+  margin-top: 5px;
+`;
+
+const ProgressTextBold = styled(ProgressText)`
+  font-weight: bold;
+  margin-right: 5px;
+`;
+
+const ScoreText = styled.Text`
+  color: ${({theme}) => theme.colors.primary};
+  font-size: 18px;
+  font-weight: bold;
+  margin-left: 5px;
+  margin-top: 2px;
+`;
+
+const RowContainer = styled(View)`
+  flex-direction: row;
+  align-items: center;
+`;
+
+const WelcomeText = styled.Text`
+  color: ${({theme}) => theme.colors.primary};
+  margin-top: 10px;
+`;
+
+const HeaderWithBackContainer = styled(View)`
+  display: flex;
+  flex-direction: row;
+  gap: 6px;
+  align-items: center;
+`;
 
 export default Header;
